@@ -35,7 +35,7 @@ global.opts = new Object(yargs(process.argv.slice(2)).exitProcess(false).parse()
 // console.log({ opts })
 global.prefix = new RegExp('^[' + (opts['prefix'] || '‎xzXZ/i!#$%+£¢€¥^°=¶∆×÷π√✓©®:;?&.\\-').replace(/[|\\{}()[\]^$+*?.\-\^]/g, '\\$&') + ']')
 
-global.db = new Low(new mongoDB('Databasebot mongodb+srv://Tunas1000:tunas1000@cluster0.wzmci.mongodb.net/myFirstDatabase?retryWrites=true&w=majority')
+global.db = new Low(new mongoDB('mongodb+srv://Tunas1000:tunas1000@cluster0.wzmci.mongodb.net/myFirstDatabase?retryWrites=true&w=majority')
 
 global.DATABASE = global.db // Backwards Compatibility
 global.loadDatabase = async function loadDatabase() {
