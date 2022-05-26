@@ -12,11 +12,13 @@ Kalian bisa mendukung saya agar bot ini tetap up to date dengan:
   「 Donasi • Pulsa 」
 •  Axis   [0831-0673-3687]
 •  Telkomsel [0813-3417-7340]
+•  tri [0896-1606-1778]
+•  smatfren [0882-0068-32884]
 
   「 Donasi • NonPulsa 」
 •  OVO   [085601928437]
-•  Saweria [https://saweria.co/Darrma]
-
+•  Saweria [https://saweria.co/Darrma / https://saweria.co/squateditz]
+•  dana  [0882-0068-32884]
 Berapapun donasi kalian akan sangat berarti 👍
 
 Arigatou!`
