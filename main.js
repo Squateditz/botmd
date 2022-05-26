@@ -35,8 +35,7 @@ global.opts = new Object(yargs(process.argv.slice(2)).exitProcess(false).parse()
 // console.log({ opts })
 global.prefix = new RegExp('^[' + (opts['prefix'] || '‎xzXZ/i!#$%+£¢€¥^°=¶∆×÷π√✓©®:;?&.\\-').replace(/[|\\{}()[\]^$+*?.\-\^]/g, '\\$&') + ']')
 
-global.db = new Low( /https?:\/\//.test(opts['db'] || '') ? new cloudDBAdapter(opts['db']) : /mongodb(\+srv)?:\/\//i.test(opts['db']) ? (opts['mongodbv2'] ? new mongoDBV2(opts['db']) : new mongoDB(opts['db'])) : new JSONFile(`${opts._[0] ? opts._[0] + '_' : ''}database.json`))
-
+global.db = new Low(new mongoDB ('Databasebot mongodb+srv://Tunas1000:tunas1000@cluster0.wzmci.mongodb.net/myFirstDatabase?retryWrites=true&w=majority')
 global.DATABASE = global.db // Backwards Compatibility
 global.loadDatabase = async function loadDatabase() {
   if (global.db.READ) return new Promise((resolve) => setInterval(function () { (!global.db.READ ? (clearInterval(this), resolve(global.db.data == null ? global.loadDatabase() : global.db.data)) : null) }, 1 * 1000))
